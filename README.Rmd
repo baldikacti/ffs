@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ffs
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of ffs is to provide fast file system functions in R similar to [fs]("https://cran.r-project.org/web/packages/fs/index.html"). 
+
+## Installation
+
+You can install the development version of ffs from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("baldikacti/ffs")
+```
+
+## Example
+
+Obtain recursive file information.
+
+```{r example}
+library(ffs)
+
+dir_info(path = ".")
+```

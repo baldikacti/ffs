@@ -1,0 +1,15 @@
+[package]
+name = 'ffs'
+version = '0.1.0'
+edition = '2021'
+
+[lib]
+crate-type = [ 'staticlib' ]
+name = 'ffs'
+
+[dependencies]
+extendr-api = '*'
+dashmap = "6.1.0"
+rayon = "1.10.0"
+users = "0.11.0"
+walkdir = "2.5.0"
